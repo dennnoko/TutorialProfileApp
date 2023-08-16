@@ -28,7 +28,7 @@ fun DetailScreen() {
     Box(modifier = Modifier.padding(30.dp)) {
         Column(modifier = Modifier
             .verticalScroll(rememberScrollState())
-            .padding(2.dp)) {
+            /*.padding(2.dp)*/) {
             template("プログラミング", "Android開発と競技プログラミングをしています")
             template("ゲーム", "スプラトゥーン、マイクラ etc...")
             template("自作PC", "ともて楽しい")
@@ -56,7 +56,7 @@ fun DetailScreen() {
 
 @Composable
 fun template(hobby: String, hDiscription: String) {
-    Row(modifier = Modifier.padding(10.dp, 10.dp, 10.dp, 5.dp)) {
+    Row(modifier = Modifier.padding(10.dp)) {
         Text(
             text = hobby,
             fontSize = 15.sp,

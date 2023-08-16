@@ -63,7 +63,6 @@ fun MainScreen() { //MainScreen() を定義
     Column( //要素を縦に並べる
         horizontalAlignment = Alignment.CenterHorizontally, //画面の中央に要素を並べていく
         modifier = Modifier //修飾する
-            .fillMaxWidth() //画面の横幅目いっぱいにColumnを広げる
     ) {
         Text(
             text = "Profile App", //表示する文をString型で与える
@@ -95,7 +94,6 @@ fun MainScreen() { //MainScreen() を定義
             text = "所属",
             fontSize = 20.sp,
             fontWeight = FontWeight.SemiBold,
-            textAlign = TextAlign.Start,
             modifier = Modifier
                 .fillMaxWidth()
                 .height(80.dp)
@@ -108,7 +106,6 @@ fun MainScreen() { //MainScreen() を定義
             text = "・名古屋工業大学\n・C0de\n・niC",
             fontSize = 15.sp,
             fontWeight = FontWeight.Medium,
-            textAlign = TextAlign.Start,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(20.dp, 0.dp)
@@ -120,7 +117,6 @@ fun MainScreen() { //MainScreen() を定義
             onClick = { detailScreen = !detailScreen },
             colors = ButtonDefaults.buttonColors(Color.Green),
             shape = RoundedCornerShape(5.dp),
-            modifier = Modifier
         ) {
             Text(
                 text = "詳細",
